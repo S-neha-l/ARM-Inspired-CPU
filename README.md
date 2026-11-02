@@ -11,6 +11,7 @@ This project implements an ARM-inspired 32-bit single-cycle CPU in Verilog HDL.
 - SystemVerilog testbench for functional verification
 
 ## Tools
-- Verilog / SystemVerilog
+- Verilog / SystemVerilog / TCL 
 - Icarus Verilog
 - GTKWave
+- Vivado
