@@ -21,7 +21,7 @@ module alu(
                           | ( SrcA[31] &  SrcB[31] & ~ALUResult[31]);
             end
             2'b01: begin // SUB
-                // *** FIX: use 33-bit subtraction so Carry = NOT borrow ***
+                // use 33-bit subtraction so Carry = NOT borrow
                 // ARM C flag for SUB = 1 when no borrow (SrcA >= SrcB unsigned)
                 sum       = {1'b0, SrcA} - {1'b0, SrcB};  // 33-bit SUB
                 ALUResult = sum[31:0];
