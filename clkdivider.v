@@ -1,0 +1,8 @@
+module clk_divider(input clk, output reg slow_clk);
+    reg [25:0] count = 0;
+
+    always @(posedge clk) begin
+        count <= count + 1;
+        slow_clk <= count[25];  // ~1Hz slow clock
+    end
+endmodule
