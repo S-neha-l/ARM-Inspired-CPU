@@ -31,7 +31,7 @@ module condlogic(
 
 endmodule
 
-\\ condcheck
+// condcheck
 module condcheck(input  [3:0] Cond,
   input  [3:0] Flags,
   output  reg CondEx
