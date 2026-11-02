@@ -1,6 +1,3 @@
-`include "controller.v"
-`include "datapath.v"
-
 module cpu(input clk, reset,
 			output  [31:0] PC,
 			input  [31:0] Instr,
@@ -19,8 +16,6 @@ module cpu(input clk, reset,
 			ALUSrc, ALUControl,
 			MemWrite, MemtoReg, PCSrc);
 
-
-  
 //integrate datapath
 	datapath dp(clk, reset,RegSrc, RegWrite, ImmSrc,
 			ALUSrc, ALUControl,MemtoReg, PCSrc,
