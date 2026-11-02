@@ -38,9 +38,9 @@ module decoder(
             end
             2'b10: begin            // Branch
                 Branch = 1;
-                ALUSrc = 1;         // FIX: use ExtImm as SrcB
+                ALUSrc = 1;         // use ExtImm as SrcB
                 ImmSrc = 2'b10;
-                RegSrc = 2'b01;     // FIX: RA1=R15=PC+8 as SrcA
+                RegSrc = 2'b01;     // RA1=R15=PC+8 as SrcA
             end
         endcase
 
