@@ -6,7 +6,7 @@ module condlogic(
     input [1:0] FlagW,
     input PCS, RegW, MemW,
 
-    // IMPORTANT → these are wires (NOT reg)
+    // these are wires (NOT reg)
     output PCSrc, RegWrite, MemWrite
 );
 
@@ -65,4 +65,3 @@ module condcheck(input  [3:0] Cond,
     endcase
   
 endmodule
-
